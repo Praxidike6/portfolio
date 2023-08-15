@@ -1,0 +1,323 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <title>Tailwind Portfolio</title>
+</head>
+
+<body class="font-nunito ">
+    <!-- Intro Section-->
+    <div class="h-5/6 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+        <!-- navbar -->
+
+        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+            <div class="flex justify-between container items-center mx-auto py-5">
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./images/male.png" alt="logo" />
+                    <span class="text-lg font-bold text-red-500 dark:text-white">Stuart McDonnell</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-slate-600 dark:text-slate-100 uppercase font-bold text-sm"
+          >
+            <li class="hover:text-slate-500"><a href="#">homepage</a></li>
+            <li class="hover:text-slate-500"><a href="#about">about me</a></li>
+            <li class="hover:text-slate-500"><a href="#services">services</a></li>
+            <li class="hover:text-slate-500"><a href="#works">works</a></li>
+            <li class="hover:text-slate-500"><a href="#contact">contact</a></li>
+          </ul>
+
+          <img id="moon"
+            src="./images/light_mode.png"
+            class="hidden md:block w-8 cursor-pointer"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 bg-indigo-600 text-white text-center"
+          >
+            <li><a id="hLink" href="#">homepage</a></li>
+            <li><a id="hLink" href="#about">about me</a></li>
+            <li><a id="hLink" href="#services">services</a></li>
+            <li><a id="hLink" href="#works">works</a></li>
+            <li><a id="hLink" href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="./images/man.png"
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 w-big h-big bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-900 dark:text-white">Web</span>
+                    <p id="at_text" class="text-red-500"></p>
+                </div>
+                <!-- texts -->
+                <div class="shadow-lg rounded-md hidden lg:flex flex-col absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 gap-5 h-fit w-1/3">
+                    <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Stuart</h1>
+                    <p class="text-gray-400">
+                        I am a personable software engineer with over 10 years experience. That's not me in the photo. This is just a site to demonstrate my skills using JavaScript/HTML/Tailwind.css
+                    </p>
+                    <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold shadow-xl w-fit" href="#contact">Hire me</a
+        >
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10  dark:bg-slate-900">
+      <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+        <!-- left -->
+        <div class="relative ">
+          <img
+            class="h-1/5 absolute top-0 left-0 -z-10"
+            src="./images/dots.png"
+            alt=""
+          />
+          <div>
+            <img
+              class="h-3/4 rounded-full overflow-hidden"
+              src="./images/portrait.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="uppercase text-indigo-600 font-bold">About Me</h1>
+          <h1 class=" dark:text-white text-3xl font-medium">Better Design</h1>
+          <h1 class="  dark:text-white text-3xl font-medium">Better Experience</h1>
+          <p class="text-grey-400">
+            I am a software developer with over 10 years of experience working
+            in the I.T. industry. I have worked for private companies and
+            government departments as both a permanent and contract employee. I
+            have worked on projects and in teams of varied scale. My primary
+            role has been as a software developer but I also have experience in
+            automated testing and systems analysis. 
+          </p>
+          <h2 class="text-gray-400 font-medium">JavaScript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-creative-blue h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">CSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-creative-yellow h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">React</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-beach-red h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">Java</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-beach-green h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">AWS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-400 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- services  -->
+    <div  id="services" class=" dark:bg-slate-900">
+      <div class="container mx-auto ">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center">
+
+        <h1 class="text-indigo-600 font-bold">Services</h1>
+        <h1 class="text-3xl dark:text-white">What do I offer?</h1>
+        <p class="w-1/2 text-center text-gray-400">I have excellent verbal and written communication skills and a high level of 
+          analytical and problem solving ability. I am a lifelong learner, curious and
+          able to learn new skills and concepts quickly, assessing where I need further knowledge 
+          or experience and actively pursuing that knowledge.
+        </p>
+      </div>
+      <!-- bottom -->
+
+
+      <!-- cards start -->
+      <div class="p-5 sm:p-0 flex flex-wrap">
+      <!-- card  -->
+      <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+       <img class="w-10" src="./images/icon.png" alt="">
+       <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
+       <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
+       <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
+                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
+                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
+                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
+                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
+                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                </div>
+                <!-- card end -->
+            </div>
+            <!-- cards end -->
+            <!-- bottom end -->
+    </div>
+    <!-- container end -->
+    </div>
+    <!-- services end -->
+
+    <!-- portfolio  -->
+    <div id="works" class="py-40 dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">Portfolio</h1>
+                <h1 class="text-3xl  dark:text-white">Works & Projects</h1>
+                <p class="w-1/2 text-center text-gray-400">I have excellent verbal and written communication skills and a high level of analytical and problem solving ability. I am a lifelong learner, curious and able to learn new skills and concepts quickly, assessing where I need further knowledge
+                    or experience and actively pursuing that knowledge.
+                </p>
+            </div>
+            <!-- bottom -->
+            <!-- cards start -->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-9 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
+                    <img src="./images/item.jpg" alt="">
+                </div>
+                <!-- card end -->
+            </div>
+            <!-- cards end -->
+            <!-- bottom end -->
+        </div>
+        <!-- container end -->
+    </div>
+    <!-- portfolio end -->
+
+    <!-- contact form -->
+    <div class=" dark:bg-slate-900">
+
+        <div id="contact" class="">
+            <div class="container mx-auto ">
+                <!-- top  -->
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+                    <h1 class="text-3xl  dark:text-white">Have a Question?</h1>
+                    <p class="w-1/2 text-center text-gray-400">Have any question you want to ask me. Drop me a message and we can see whatwe can do together.
+                    </p>
+                </div>
+                <!-- bottom  -->
+                <!-- form  -->
+                <form class="mt-5 p-8 flex flex-col items-center gap-5">
+                    <input class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 dark:ring-0 dark:text-white rounded-sm dark:bg-slate-800" type="text" name="" id="" placeholder="Name ... ">
+                    <input class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 rounded-sm dark:ring-0 dark:text-white dark:bg-slate-800" type="email" name="" id="" placeholder="Email ... ">
+                    <textarea class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 rounded-sm dark:ring-0 dark:text-white dark:bg-slate-800" name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+                    <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 cursor-pointer rounded-md">Submit</button>
+                </form>
+                <!-- form end  -->
+            </div>
+        </div>
+        <!-- footer  -->
+        <div class="w-full bg-gray-800">
+            <div class="flex justify-between container items-center mx-auto py-5">
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./images/male.png" alt="logo" />
+                    <span class="text-lg font-bold text-white">Stuart McDonnell</span
+      >
+            </div>
+            <span class="hidden md:block font-medium text-white">
+              Designed and implement by Stuart McDonnell</span>
+
+                    <div class="flex gap-2">
+                        <img class="w-4 cursor-pointer" src="./images/linkedin.png" alt="">
+                        <img class="w-4 cursor-pointer" src="./images/facebook.png" alt="">
+                        <img class="w-4 cursor-pointer" src="./images/instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- contact form end  -->
+            <script src="./app.js "></script>
+            <script src="./helper/autotyping.js "></script>
+</body>
+
+</html>
