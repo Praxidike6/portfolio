@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <link href="/tailwind.css" rel="stylesheet">
     <title>Tailwind Portfolio</title>
 </head>
 
@@ -29,7 +30,7 @@
             <li class="hover:text-slate-500"><a href="#about">about me</a></li>
             <li class="hover:text-slate-500"><a href="#services">services</a></li>
             <li class="hover:text-slate-500"><a href="#works">works</a></li>
-            <li class="hover:text-slate-500"><a href="#contact">contact</a></li>
+            <li class="hover:text-red-500"><a href="#contact">contact</a></li>
           </ul>
 
           <img id="moon"
@@ -59,12 +60,17 @@
       <!-- intro content -->
       <!-- image -->
       <picture >
+        <source media="(min-width:1024px)"
+        srcset="./images/wasp.png">
         <source media="(min-width:640px)"
-        srcset="./images/man-md.png">
+        srcset="./images/wasp_left_sm.png">
+        <source media="(min-width:480px)"
+        srcset="./images/wasp_left_sm.png">
       <img
       class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
-      src="./images/man-alt-sm.png"
-    />
+      src="./images/fish.png"
+      />
+   
   </picture>
     <!--   <img
         class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
@@ -85,8 +91,8 @@
                 <!-- texts -->
                 <div class="shadow-lg rounded-md hidden lg:flex flex-col absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 gap-5 h-fit w-1/3">
                     <h1 class="text-4xl font-bold dark:text-white text-indigo-900">Hi, I'm Stuart</h1>
-                    <p class="text-gray-400">
-                        I am a personable software engineer with over 10 years experience. That's not me in the photo. This is just a site to demonstrate my skills using JavaScript/HTML/Tailwind.css
+                    <p class="dark:text-white text-gray-800 ">
+                        I am a personable software engineer with over 10 years experience. This is just a site to demonstrate my skills using JavaScript/HTML/Tailwind.css
                     </p>
                     <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold shadow-xl w-fit" href="#contact">Hire me</a
         >
@@ -96,18 +102,28 @@
     <div id="about" class="px-10 pt-20  dark:bg-slate-900">
       <div class="container mx-auto  flex flex-col-reverse lg:flex-row items-center gap-20">
         <!-- left -->
-        <div class="relative ">
+        <div class="relative">
           <img
             class="h-1/5 absolute top-0 left-0 -z-10 "
             src="./images/dots.png"
             alt=""
           />
-          <div>
-            <img
+          <div >
+            <picture >
+              <source media="(min-width:1024px)"
               class="h-3/4 rounded-full overflow-hidden"
-              src="./images/portrait.png"
+              srcset="./images/robot.png">
+              <source media="(min-width:640px)"
+              srcset="./images/mouse.png">
+              <source media="(min-width:480px)"
+              srcset="./images/mouse.png" >
+              <img
+              class="h-3/4 rounded-full overflow-hidden "
+              src="./images/robot.png"
               alt=""
             />
+            </picture>  
+         
           </div>
         </div>
         <!-- right -->
@@ -170,49 +186,61 @@
       <!-- card  -->
       <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
        <img class="w-10" src="./images/icon.png" alt="">
-       <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
-       <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
-       <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+       <h1 class="font-medium text-lg  dark:text-white">Software Development</h1>
+       <p class="text-gray-400">JavaScript, React, CSS, HTML, Java, C</p>
+       <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
+                </div>
+                <!-- card end -->
+                <!-- card  -->
+                <div class="  dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+                    <img class="w-10" src="./images/icon.png" alt="">
+                    <h1 class="font-medium text-lg  dark:text-white">Web Styling Frameworks</h1>
+                    <p class="text-gray-400">Tailwind, Bootstrap, Styled Components</p>
+                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
                 </div>
                 <!-- card end -->
                 <!-- card  -->
                 <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
                     <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
-                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                    <h1 class="font-medium text-lg  dark:text-white">Backend</h1>
+                    <p class="text-gray-400">Oracle, MongoDB, Supabase, AWS (S3,EFS,RDS,DynamoDB, Aurora )</p>
+                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
                 </div>
                 <!-- card end -->
                 <!-- card  -->
                 <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
                     <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
-                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                    <h1 class="font-medium text-lg  dark:text-white">Platforms</h1>
+                    <p class="text-gray-400">Unix/Linux, AWS Cloud</p>
+                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
                 </div>
                 <!-- card end -->
                 <!-- card  -->
                 <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
                     <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
-                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                    <h1 class="font-medium text-lg  dark:text-white">Development Tools</h1>
+                    <p class="text-gray-400">GitHub, CodeCommit, AWS Amplify, AWS CodePipeline</p>
+                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
                 </div>
                 <!-- card end -->
                 <!-- card  -->
                 <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
                     <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
-                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-                    <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">UX/UI Design</h1>
-                    <p class="text-gray-400">blar blar blar blar blar blar blar blar blar blar blar blar blar blar blar</p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a>
+                    <h1 class="font-medium text-lg  dark:text-white">Testing</h1>
+                    <p class="text-gray-400">Jest, Mocha, Chai, React Testing Library</p>
+                   <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
+                    <!-- <a data-popover-target="popover-default" class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
+                <!--- popup code start -->
+                <!-- <div data-popover id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                      <h3 class="font-semibold text-gray-900 dark:text-white">Popover title</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                      <p>And here's some amazing content. It's very engaging. Right?</p>
+                  </div>
+                  <div data-popper-arrow></div>
+              </div> -->
+                <!-- popup code end -->    
                 </div>
                 <!-- card end -->
             </div>
@@ -227,55 +255,65 @@
     <div id="works" class="pt-20 dark:bg-slate-900">
         <div class="container mx-auto">
             <!-- top -->
-            <div class="flex flex-col gap-3 items-center">
+            <div class="flex flex-col gap-3 items-center  ">
                 <h1 class="text-indigo-600 font-bold">Portfolio</h1>
                 <h1 class="text-3xl  dark:text-white">Works & Projects</h1>
-                <p class="w-1/2 text-center text-gray-400">I have excellent verbal and written communication skills and a high level of analytical and problem solving ability. I am a lifelong learner, curious and able to learn new skills and concepts quickly, assessing where I need further knowledge
-                    or experience and actively pursuing that knowledge.
+                <p class="w-1/2 text-center text-gray-400">I am AWS, JavaScript and <a  href="https://verify.w3schools.com/1O08JXXTWN" target="_blank"><span class=" transition duration-300 hover:scale-110">React.js</span></a> certified and have recently completed courses in microservices (Docker and Kubernetes), JavaScript/Typescript, WordPress, React and Angular. Below are some of the projects I have created.
                 </p>
             </div>
             <!-- bottom -->
             <!-- cards start -->
-            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between  ">
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-9 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class=" w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-9 my-3 md:my-10 m-1 lg:w-1/5  transition duration-300 hover:scale-110  ">
+                  <a class=" hover:backdrop-brightness-150" href="https://visited-world-cities.onrender.com" target="_blank">
+                    
+                  <img  src="./images/ww1.png"  alt="jjj"/>
+                  </a>  
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+                    <img src="./images/ww2.png" alt="">
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110"">
+                    <img src="./images/hotel1.png" alt="">
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+                  <a href="https://pizza-menu-app.onrender.com" target="_blank">
+                  <img src="./images/pizza1.png" alt="pizza"/>
+                   
+                    </a> 
+                    
 
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+                    <img src="./images/pizza2.png" alt="">
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+                  <a  href="https://main.d2ny9o6foq19qo.amplifyapp.com" target="_blank"> 
+                  <img src="./images/movie1.png" alt="">
+                  </a>
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+                    <img src="./images/movie2.png" alt="">
                 </div>
                 <!-- card end -->
                 <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5">
-                    <img src="./images/item.jpg" alt="">
+                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+                  <a  href="https://tailwind-login-example.onrender.com/?" target="_blank"> 
+                    <img src="./images/login.png" alt="">
+                    </a>
                 </div>
                 <!-- card end -->
             </div>
