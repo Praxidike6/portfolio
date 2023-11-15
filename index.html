@@ -1,180 +1,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
-    <link href="/tailwind.css" rel="stylesheet">
-    <title>Tailwind Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <title>Tailwind Portfolio</title>
 </head>
 
-<body class="font-nunito scrollbar hover:scrollbar-thumb-creative-lilac scrollbar-w-7 scrollbar-track-indigo-100 scrollbar-thumb-slate-400 dark:scrollbar-thumb-white dark:scrollbar-track-gray-500">
-    <!-- Header Section-->
-    <div class="h-5/6 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
-        <!-- navbar -->
+<body
+  class="font-nunito scrollbar hover:scrollbar-thumb-creative-lilac scrollbar-w-7 scrollbar-track-indigo-100 scrollbar-thumb-slate-400 dark:scrollbar-thumb-white dark:scrollbar-track-gray-500">
+  <!-- Header Section-->
+  <div
+    class="h-5/6 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+    <!-- navbar -->
 
-        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
-            <div class="flex justify-between container items-center mx-auto py-5">
-                <div class="flex items-center gap-2">
-                    <img class="w-8" src="./images/male.png" alt="logo" />
-                    <span class="text-lg font-bold text-red-500 dark:text-white">Stuart McDonnell</span
-            >
-          </div>
-          <ul
-            class="hidden md:flex space-x-10 text-slate-600 dark:text-slate-100 uppercase font-bold text-sm"
-          >
-            <li class="hover:text-slate-500"><a href="#">homepage</a></li>
-            <li class="hover:text-slate-500"><a href="#about">about me</a></li>
-            <li class="hover:text-slate-500"><a href="#services">services</a></li>
-            <li class="hover:text-slate-500"><a href="#works">works</a></li>
-            <li class="hover:text-red-500"><a href="#contact">contact</a></li>
-          </ul>
-
-          <img id="moon"
-            src="./images/light_mode.png"
-            class="hidden md:block w-8 cursor-pointer"
-            alt=""
-          />
-          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-          </div>
-          <ul
-            id="menu"
-            class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 bg-indigo-600 text-white text-center"
-          >
-            <li><a id="hLink" href="#">homepage</a></li>
-            <li><a id="hLink" href="#about">about me</a></li>
-            <li><a id="hLink" href="#services">services</a></li>
-            <li><a id="hLink" href="#works">works</a></li>
-            <li><a id="hLink" href="#contact">contact</a></li>
-          </ul>
+    <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+      <div class="flex justify-between container items-center mx-auto py-5">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./images/male.png" alt="logo" />
+          <span class="text-lg font-bold text-red-500 dark:text-white">Stuart McDonnell</span>
         </div>
-      </nav>
-      <!-- header section end-->
+        <ul class="hidden md:flex space-x-10 text-slate-600 dark:text-slate-100 uppercase font-bold text-sm">
+          <li class="hover:text-slate-500"><a href="#">homepage</a></li>
+          <li class="hover:text-slate-500"><a href="#about">about me</a></li>
+          <li class="hover:text-slate-500"><a href="#services">services</a></li>
+          <li class="hover:text-slate-500"><a href="#works">works</a></li>
+          <li class="hover:text-red-500"><a href="#contact">contact</a></li>
+        </ul>
 
-      <!-- intro content -->
-      <!-- image -->
-      <picture >
-        <source media="(min-width:1024px)"
-        srcset="./images/wasp.png">
-        <source media="(min-width:640px)"
-        srcset="./images/wasp_left_sm.png">
-        <source media="(min-width:480px)"
-        srcset="./images/wasp_left_sm.png">
-      <img
-      class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
-      src="./images/fish.png"
-      />
-   
-  </picture>
+        <img id="moon" src="./images/light_mode.png" class="hidden md:block w-8 cursor-pointer" alt="" />
+        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+        <ul id="menu"
+          class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 bg-indigo-600 text-white text-center">
+          <li><a id="hLink" href="#">homepage</a></li>
+          <li><a id="hLink" href="#about">about me</a></li>
+          <li><a id="hLink" href="#services">services</a></li>
+          <li><a id="hLink" href="#works">works</a></li>
+          <li><a id="hLink" href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header section end-->
+
+    <!-- intro content -->
+    <!-- image -->
+    <!-- <div class="home-pic dark:home-pic-dark">Picture</div> -->
+    <picture>
+      <source media="(min-width:1024px)" srcset="./images/wasp.png">
+      <source media="(min-width:640px)" srcset="./images/wasp_left_sm.png">
+      <source media="(min-width:480px)" srcset="./images/wasp_left_sm.png">
+      <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./images/fish.png" />
+
+    </picture>
     <!--   <img
         class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
        
         src="./images/man-md.png"
       /> -->
-      <!-- circle -->
-      <div
-        class="hidden lg:block absolute -bottom-1/4 w-big h-big bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10"
-      ></div>
-      <!-- animated text -->
-      <div
-        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
-      >
-        <span class="text-gray-900 dark:text-white">Web</span>
-                    <p id="at_text" class="text-red-500"></p>
-                </div>
-                <!-- texts -->
-                <div class="shadow-lg rounded-md hidden lg:flex flex-col absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 gap-5 h-fit w-1/3">
-                    <h1 class="text-4xl font-bold dark:text-white text-indigo-900">Hi, I'm Stuart</h1>
-                    <p class="dark:text-white text-gray-800 ">
-                        I am a personable software engineer with over 10 years experience. This website demonstrates my skills using JavaScript/HTML/Tailwind.css and has links to my other projects.
-                    </p>
-                    <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold shadow-xl w-fit" href="#contact">Hire me</a
-        >
-      </div>
+    <!-- circle -->
+    <div
+      class="hidden lg:block absolute -bottom-1/4 w-big h-big bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10">
     </div>
-    <!-- about section -->
-    <div id="about" class="px-10 pt-20  dark:bg-slate-900">
-      <div class="container mx-auto  flex flex-col-reverse lg:flex-row items-center gap-20">
-        <!-- left -->
-        <div class="relative">
-          <img
-            class="h-1/5 absolute top-0 left-0 -z-10 "
-            src="./images/dots.png"
-            alt=""
-          />
-          <div >
-            <picture >
-              <source media="(min-width:1024px)"
-              class="h-3/4 rounded-full overflow-hidden"
-              srcset="./images/robot.png">
-              <source media="(min-width:640px)"
-              srcset="./images/mouse.png">
-              <source media="(min-width:480px)"
-              srcset="./images/mouse.png" >
-              <img
-              class="h-3/4 rounded-full overflow-hidden "
-              src="./images/mouse.png"
-              alt=""
-            />
-            </picture>  
-         
-          </div>
-        </div>
-        <!-- right -->
-        <div class="my-auto flex flex-col gap-3">
-          <h1 class=" text-indigo-600 font-bold">About Me</h1>
-          <h1 class=" dark:text-white text-3xl font-medium">Better Design</h1>
-          <h1 class="  dark:text-white text-3xl font-medium">Better Experience</h1>
-          <p class=" dark:text-white text-grey-400">
-            I am a software developer with over 10 years of experience working
-            in the I.T. industry. I have worked for private companies and
-            government departments as both a permanent and contract employee. I
-            have worked on projects and in teams of varied scale. My primary
-            role has been as a software developer but I also have experience in
-            automated testing and systems analysis. 
-          </p>
-          <h2 class="text-gray-400 font-medium">JavaScript</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-full bg-creative-blue h-1.5 rounded-md"></div>
-          </div>
-          <h2 class="text-gray-400 font-medium">CSS</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-4/6 bg-creative-yellow h-1.5 rounded-md"></div>
-          </div>
-          <h2 class="text-gray-400 font-medium">React</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-5/6 bg-beach-red h-1.5 rounded-md"></div>
-          </div>
-          <h2 class="text-gray-400 font-medium">Java</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-5/6 bg-beach-green h-1.5 rounded-md"></div>
-          </div>
-          <h2 class="text-gray-400 font-medium">AWS</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-5/6 bg-indigo-400 h-1.5 rounded-md"></div>
-          </div>
+    <!-- animated text -->
+    <div
+      class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+      <span class="text-gray-900 dark:text-white">Web</span>
+      <p id="at_text" class="text-red-500"></p>
+    </div>
+    <!-- texts -->
+    <div
+      class="shadow-lg rounded-md hidden lg:flex flex-col absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 gap-5 h-fit w-1/3">
+      <h1 class="text-4xl font-bold dark:text-white text-indigo-900">Hi, I'm Stuart</h1>
+      <p class="dark:text-white text-gray-800 ">
+        I am a personable software engineer with over 10 years experience. This website demonstrates my skills using
+        JavaScript/HTML/Tailwind.css and has links to my other projects.
+      </p>
+      <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold shadow-xl w-fit"
+        href="#contact">Hire me</a>
+    </div>
+  </div>
+  <!-- about section -->
+  <div id="about" class="px-10 pt-20  dark:bg-slate-900">
+    <div class="container mx-auto  flex flex-col-reverse lg:flex-row items-center gap-20">
+      <!-- left -->
+      <div class="relative">
+        <img class="h-1/5 absolute top-0 left-0 -z-10 " src="./images/dots.png" alt="" />
+        <div>
+          <picture>
+            <source media="(min-width:1024px)" class="h-3/4 rounded-full overflow-hidden" srcset="./images/robot.png">
+            <source media="(min-width:640px)" srcset="./images/mouse.png">
+            <source media="(min-width:480px)" srcset="./images/mouse.png">
+            <img class="h-3/4 rounded-full overflow-hidden " src="./images/mouse.png" alt="" />
+          </picture>
+
         </div>
       </div>
+      <!-- right -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class=" text-indigo-600 font-bold">About Me</h1>
+        <h1 class=" dark:text-white text-3xl font-medium">Better Design</h1>
+        <h1 class="  dark:text-white text-3xl font-medium">Better Experience</h1>
+        <p class=" dark:text-white text-grey-400">
+          I am a software developer with over 10 years of experience working
+          in the I.T. industry. I have worked for private companies and
+          government departments as both a permanent and contract employee. I
+          have worked on projects and in teams of varied scale. My primary
+          role has been as a software developer but I also have experience in
+          automated testing and systems analysis. 
+        </p>
+        <h2 class="text-gray-400 font-medium">JavaScript</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-creative-blue h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">CSS</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-4/6 bg-creative-yellow h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">React</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-5/6 bg-beach-red h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">Java</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-5/6 bg-beach-green h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">AWS</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-5/6 bg-indigo-400 h-1.5 rounded-md"></div>
+        </div>
       </div>
-      
     </div>
-    <!-- services section -->
-    <div  id="services" class=" pt-20 dark:bg-slate-900">
-      <div  class="container mx-auto ">
+  </div>
+
+
+  <!-- services section -->
+  <div id="services" class=" pt-20 dark:bg-slate-900 relative">
+    <div class="container mx-auto ">
       <!-- top -->
       <div class="flex flex-col gap-3 items-center">
 
-        <h1  class="text-indigo-600 font-bold">Services</h1>
+        <h1 class="text-indigo-600 font-bold">Services</h1>
         <h1 class="text-3xl dark:text-white">What do I offer?</h1>
-        <p class="w-1/2 text-center text-gray-400">I have excellent verbal and written communication skills and a high level of 
+        <p class="w-1/2 text-center text-gray-400">I have excellent verbal and written communication skills and a high
+          level of
           analytical and problem solving ability. I am a lifelong learner, curious and
-          able to learn new skills and concepts quickly, assessing where I need further knowledge 
+          able to learn new skills and concepts quickly, assessing where I need further knowledge
           or experience and actively pursuing that knowledge.
         </p>
       </div>
@@ -183,191 +161,434 @@
 
       <!-- cards start -->
       <div class="p-5 sm:p-0 flex flex-wrap">
-      <!-- card  -->
-      <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-       <img class="w-10" src="./images/icon.png" alt="">
-       <h1 class="font-medium text-lg  dark:text-white">Software Development</h1>
-       <p class="text-gray-400">JavaScript, React, CSS, HTML, Java, C</p>
-       <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="  dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-                    <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">Web Styling Frameworks</h1>
-                    <p class="text-gray-400">Tailwind, Bootstrap, Styled Components</p>
-                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-                    <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">Backend</h1>
-                    <p class="text-gray-400">Oracle, MongoDB, Supabase, AWS (S3,EFS,RDS,DynamoDB, Aurora )</p>
-                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-                    <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">Platforms</h1>
-                    <p class="text-gray-400">Unix/Linux, AWS Cloud</p>
-                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-                    <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">Development Tools</h1>
-                    <p class="text-gray-400">GitHub, CodeCommit, AWS Amplify, AWS CodePipeline</p>
-                    <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
-                    <img class="w-10" src="./images/icon.png" alt="">
-                    <h1 class="font-medium text-lg  dark:text-white">Testing</h1>
-                    <p class="text-gray-400">Jest, Mocha, Chai, React Testing Library</p>
-                   <!-- <a class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                    <!-- <a data-popover-target="popover-default" class="text-indigo-600 font-semibold text-sm" href="">Read more</a> -->
-                <!--- popup code start -->
-                <!-- <div data-popover id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-                  <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                      <h3 class="font-semibold text-gray-900 dark:text-white">Popover title</h3>
-                  </div>
-                  <div class="px-3 py-2">
-                      <p>And here's some amazing content. It's very engaging. Right?</p>
-                  </div>
-                  <div data-popper-arrow></div>
-              </div> -->
-                <!-- popup code end -->    
-                </div>
-                <!-- card end -->
-            </div>
-            <!-- cards end -->
-            <!-- bottom end -->
+        <!-- card  -->
+        <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+          <img class="w-10" src="./images/icon.png" alt="">
+          <h1 class="font-medium text-lg  dark:text-white">Software Development</h1>
+          <p class="text-gray-400">JavaScript,
+
+            <a target="_blank" href="https://react.dev/" class="text-react-blue dark:text-violet-400 hover:no-underline"
+              data-popover-target="react-popover-image" data-popover-offset="30">
+              React
+
+            </a>
+
+            , CSS, HTML, Java, C
+          </p>
+
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="  dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+          <img class="w-10" src="./images/icon.png" alt="">
+          <h1 class="font-medium text-lg  dark:text-white">Web Styling Frameworks</h1>
+          <p class="text-gray-400">Tailwind, Bootstrap,
+            <a target="_blank" href="https://styled-components.com/"
+              class="text-styled-violet dark:text-violet-500 hover:no-underline"
+              data-popover-target="styled-popover-image">
+              Styled Components
+            </a>
+          </p>
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+          <img class="w-10" src="./images/icon.png" alt="">
+          <h1 class="font-medium text-lg  dark:text-white">Backend</h1>
+          <p class="text-gray-400">Oracle, MongoDB,
+
+            <a target="_blank" href="https://supabase.com/"
+              class="text-supa-green dark:text-violet-500 hover:no-underline"
+              data-popover-target="supabase-popover-image">
+              Supabase
+            </a>
+
+            , AWS (S3,EFS,RDS,DynamoDB, Aurora )
+          </p>
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+          <img class="w-10" src="./images/icon.png" alt="">
+          <h1 class="font-medium text-lg  dark:text-white">Platforms</h1>
+          <p class="text-gray-400">Unix/Linux,
+            <a target="_blank" href="https://aws.amazon.com/"
+              class="text-aws-orange dark:text-violet-500 hover:no-underline"
+              data-popover-target="awscloud-popover-image">
+              AWS Cloud
+            </a>
+
+          </p>
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+          <img class="w-10" src="./images/icon.png" alt="">
+          <h1 class="font-medium text-lg  dark:text-white">Development Tools</h1>
+          <p class="text-gray-400">GitHub,
+            <a target="_blank" href="https://aws.amazon.com/codecommit/?nc2=h_ql_prod_dt_cc"
+              class="text-green-600 dark:text-violet-500 hover:no-underline"
+              data-popover-target="codecommit-popover-image">
+              CodeCommit
+            </a>
+
+            , AWS Amplify, AWS CodePipeline
+          </p>
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div class=" dark:shadow-slate-800 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10">
+          <img class="w-10" src="./images/icon.png" alt="">
+          <h1 class="font-medium text-lg  dark:text-white">Testing</h1>
+          <p class="text-gray-400">
+            <a target="_blank" href="https://jestjs.io/" class="text-red-700 dark:text-violet-500 hover:no-underline"
+              data-popover-target="jest-popover-image">
+              Jest
+            </a>
+
+            , Mocha, Chai, React Testing Library
+          </p>
+
+        </div>
+
+        <!-- card end -->
+      </div>
+
+      <!-- cards end -->
+      <!-- bottom end -->
     </div>
     <!-- container end -->
-    </div>
-    <!-- services end -->
-
-    <!-- portfolio  -->
-    <div id="works" class="pt-20 dark:bg-slate-900">
-        <div class="container mx-auto">
-            <!-- top -->
-            <div class="flex flex-col gap-3 items-center  ">
-                <h1 class="text-indigo-600 font-bold">Portfolio</h1>
-                <h1 class="text-3xl  dark:text-white">Works & Projects</h1>
-                <p class="w-1/2 text-center text-gray-400">I am AWS, JavaScript and <a  href="https://verify.w3schools.com/1O08JXXTWN" target="_blank"><span class=" transition duration-300 hover:scale-110">React.js</span></a> certified and have recently completed courses in microservices (Docker and Kubernetes), JavaScript/Typescript, WordPress, React and Angular. Below are some of the projects I have created.
-                </p>
-            </div>
-            <!-- bottom -->
-            <!-- cards start -->
-            <div class="p-5 sm:p-0 flex flex-wrap justify-between  ">
-                <!-- card  -->
-                <div class=" w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-9 my-3 md:my-10 m-1 lg:w-1/5  transition duration-300 hover:scale-110  ">
-                  <a class=" hover:backdrop-brightness-150" href="https://visited-world-cities.onrender.com" target="_blank">
-                    
-                  <img  src="./images/ww1.png"  alt="jjj"/>
-                  </a>  
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
-                    <img src="./images/ww2.png" alt="">
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110"">
-                    <img src="./images/hotel1.png" alt="">
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
-                  <a href="https://pizza-menu-app.onrender.com" target="_blank">
-                  <img src="./images/pizza1.png" alt="pizza"/>
-                   
-                    </a> 
-                    
-
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
-                    <img src="./images/pizza2.png" alt="">
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
-                  <a  href="https://main.d2ny9o6foq19qo.amplifyapp.com" target="_blank"> 
-                  <img src="./images/movie1.png" alt="">
-                  </a>
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
-                    <img src="./images/movie2.png" alt="">
-                </div>
-                <!-- card end -->
-                <!-- card  -->
-                <div class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
-                  <a  href="https://tailwind-login-example.onrender.com/?" target="_blank"> 
-                    <img src="./images/login.png" alt="">
-                    </a>
-                </div>
-                <!-- card end -->
-            </div>
-            <!-- cards end -->
-            <!-- bottom end -->
+    <!--- popup code start -->
+    <div data-popover id="react-popover-image" role="tooltip"
+      class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-md shadow-react-blue opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 p-3">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              Description
+            </h3>
+            <p>
+              React.js is a front-end library that has gradually become
+              the go-to framework for modern web development within the
+              JavaScript community.
+            </p>
+            <a target="_blank" href="https://react.dev/"
+              class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">
+              Read more
+              <svg class="w-2 h-2 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <!-- container end -->
+        <img src="/images/react.png" class="mt-2 h-3/4 col-span-2" alt="Italy map" />
+      </div>
+      <div data-popper-arrow></div>
     </div>
-    <!-- portfolio end -->
 
-    <!-- contact form -->
-    <div id="contact" class="pt-20 dark:bg-slate-900">
-
-        <div>
-            <div class="container mx-auto ">
-                <!-- top  -->
-                <div class="flex flex-col gap-3 items-center">
-                    <h1 class="text-indigo-600 font-bold">Contact</h1>
-                    <h1 class="text-3xl  dark:text-white">Have a Question?</h1>
-                    <p class="w-1/2 text-center text-gray-400">Have any question you want to ask me. Drop me a message and we can see whatwe can do together.
-                    </p>
-                </div>
-                <!-- bottom  -->
-                <!-- form  -->
-                <form action="mailto:mcdonnell.stuart+portfolio@gmail.com" method="post" enctype="text/plain" class="mt-5 p-8 flex flex-col items-center gap-5">
-                    <input class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 dark:ring-0 dark:text-white rounded-sm dark:bg-slate-800" type="text" name="name" id="" placeholder="Name ... ">
-                    <input class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 rounded-sm dark:ring-0 dark:text-white dark:bg-slate-800" type="email" name="email" id="" placeholder="Email ... ">
-                    <textarea class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 rounded-sm dark:ring-0 dark:text-white dark:bg-slate-800" name="message" id="" cols="30" rows="10" placeholder="Message..."></textarea>
-                    <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 cursor-pointer rounded-md">Submit</button>
-                </form>
-                <!-- form end  -->
-            </div>
+    <!-- Styled Components Popover Start -->
+    <div data-popover id="styled-popover-image" role="tooltip"
+      class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-md shadow-styled-violet opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 p-3">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              Description
+            </h3>
+            <p>
+              Styled-components is a library that allows you to write CSS in
+              JS while building custom components in Reactjs . There are
+              multiple options you can go with to style a React application.
+            </p>
+            <a target="_blank" href="https://styled-components.com/"
+              class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">
+              Read more
+              <svg class="w-2 h-2 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <!-- footer  -->
-        <div class="w-full bg-gray-800">
-            <div class="flex justify-between container items-center mx-auto py-5">
-                <div class="flex items-center gap-2">
-                    <img class="w-8" src="./images/male.png" alt="logo" />
-                    <span class="text-lg font-bold text-white">Stuart McDonnell</span
-      >
-            </div>
-            <span class="hidden md:block font-medium text-white">
-              Designed and implement by Stuart McDonnell</span>
+        <img src="/images/styled-components.png" class="mt-2 h-3/4 col-span-2" alt="Italy map" />
+      </div>
+      <div data-popper-arrow></div>
+    </div>
+    <!-- Styled Components Popover Ends -->
 
-                    <div class="flex gap-2">
-                        <img class="w-4 cursor-pointer" src="./images/linkedin.png" alt="">
-                        <img class="w-4 cursor-pointer" src="./images/facebook.png" alt="">
-                        <img class="w-4 cursor-pointer" src="./images/instagram.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- contact form end  -->
-            <script src="./app.js "></script>
-            <script src="./helper/autotyping.js "></script>
+    <!-- Supabase Popover Starts -->
+    <div data-popover id="supabase-popover-image" role="tooltip"
+      class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border-2 border-gray-200 rounded-lg shadow-md shadow-supa-green opacity-0 w-96 dark:text-gray-200 dark:bg-gray-800 dark:border-grey-100">
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 p-3">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              Description
+            </h3>
+            <p>
+              Supabase is an open-source firebase alternative that helps
+              developers to create a project with a Postgres Database,
+              Authentication, real-time subscription and Storage.
+            </p>
+            <a target="_blank" href="https://supabase.com/"
+              class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">
+              Read more
+              <svg class="w-2 h-2 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <img src="/images/supabase-logo.png" class="mt-2 h-3/4 col-span-2" alt="Italy map" />
+      </div>
+      <div data-popper-arrow></div>
+    </div>
+    <!-- Supabase Popover Ends -->
+
+    <!-- AWS Cloud Starts -->
+    <div data-popover id="awscloud-popover-image" role="tooltip"
+      class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-md shadow-aws-orange opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 p-3">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              Description
+            </h3>
+            <p>
+              Amazon Web Services offers over 200 cloud-based serivces
+              including compute, databases, analytics, networking, developer
+              tools, security, and enterprise applications: on-demand,
+              available in seconds, with pay-as-you-go pricing.
+            </p>
+            <a target="_blank" href="https://aws.amazon.com/"
+              class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">
+              Read more
+              <svg class="w-2 h-2 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <img src="/images/aws-cloud-logo.png" class="mt-2 h-3/4 col-span-2" alt="Italy map" />
+      </div>
+      <div data-popper-arrow></div>
+    </div>
+
+    <!-- AWS Cloud Popover Ends -->
+    <!-- CodeCommit Popover Starts -->
+    <div data-popover id="codecommit-popover-image" role="tooltip"
+      class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-md shadow-green-600 opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 p-3">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              Description
+            </h3>
+            <p>
+              AWS CodeCommit is a version control service hosted by Amazon Web
+              Services that you can use to privately store and manage assets
+              (such as documents, source code, and binary files) in the cloud
+            </p>
+            <a target="_blank" href="https://aws.amazon.com/codecommit/?nc2=h_ql_prod_dt_cc"
+              class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">
+              Read more
+              <svg class="w-2 h-2 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <img src="/images/codecommit-icon.png" class="h-3/4 mt-2 col-span-2" alt="Italy map" />
+      </div>
+      <div data-popper-arrow></div>
+    </div>
+    <!-- CodeCommit Popover Ends -->
+    <!-- Jest Popover Starts -->
+
+    <div data-popover id="jest-popover-image" role="tooltip"
+      class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-md shadow-jest-red opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+      <div class="grid grid-cols-5">
+        <div class="col-span-3 p-3">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-900 dark:text-white">
+              Description
+            </h3>
+            <p>
+              Jest is a JavaScript testing framework designed to ensure
+              correctness of any JavaScript codebase. It allows you to write
+              tests with an approachable, familiar and feature-rich API that
+              gives you results quickly.
+            </p>
+            <a target="_blank" href="https://jestjs.io/"
+              class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">
+              Read more
+              <svg class="w-2 h-2 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <img src="/images/jest-logo.png" class="mt-3 h-3/4 col-span-2" alt="Italy map" />
+      </div>
+      <div data-popper-arrow></div>
+    </div>
+    <!-- Jest Popover Ends -->
+    <!-- popup code end -->
+  </div>
+
+
+
+  <!-- services end -->
+
+  <!-- portfolio  -->
+  <div id="works" class="pt-20 dark:bg-slate-900">
+    <div class="container mx-auto">
+      <!-- top -->
+      <div class="flex flex-col gap-3 items-center  ">
+        <h1 class="text-indigo-600 font-bold">Portfolio</h1>
+        <h1 class="text-3xl  dark:text-white">Works & Projects</h1>
+        <p class="w-1/2 text-center text-gray-400">I am AWS, JavaScript and <a
+            href="https://verify.w3schools.com/1O08JXXTWN" target="_blank"><span
+              class=" text-blue-500 transition duration-300 hover:scale-110 hover:text-blue-400">React.js</span></a>
+          certified and have recently completed courses in microservices (Docker and Kubernetes), JavaScript/Typescript,
+          WordPress, React and Angular. Below are some of the projects I have created.
+        </p>
+      </div>
+      <!-- bottom -->
+      <!-- cards start -->
+      <div class="p-5 sm:p-0 flex flex-wrap justify-between  ">
+        <!-- card  -->
+        <div
+          class=" w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-9 my-3 md:my-10 m-1 lg:w-1/5  transition duration-300 hover:scale-110  ">
+          <a class=" hover:backdrop-brightness-150" href="https://visited-world-cities.onrender.com" target="_blank">
+
+            <img src="./images/ww1.png" alt="jjj" />
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+          <img src="./images/ww2.png" alt="">
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110"">
+                    <img src=" ./images/hotel1.png" alt="">
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+          <a href="https://pizza-menu-app.onrender.com" target="_blank">
+            <img src="./images/pizza1.png" alt="pizza" />
+
+          </a>
+
+
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+          <img src="./images/pizza2.png" alt="">
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+          <a href="https://main.d2ny9o6foq19qo.amplifyapp.com" target="_blank">
+            <img src="./images/movie1.png" alt="">
+          </a>
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+          <img src="./images/movie2.png" alt="">
+        </div>
+        <!-- card end -->
+        <!-- card  -->
+        <div
+          class="w-full md:w-5/12 shadow-xl rounded-lg p-5  gap-3 my-3 md:my-10 m-1 lg:w-1/5 transition duration-300 hover:scale-110">
+          <a href="https://tailwind-login-example.onrender.com/?" target="_blank">
+            <img src="./images/login.png" alt="">
+          </a>
+        </div>
+        <!-- card end -->
+      </div>
+      <!-- cards end -->
+      <!-- bottom end -->
+    </div>
+    <!-- container end -->
+  </div>
+  <!-- portfolio end -->
+
+  <!-- contact form -->
+  <div id="contact" class="pt-20 dark:bg-slate-900">
+
+
+    <div class="container mx-auto ">
+      <!-- top  -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-600 font-bold">Contact</h1>
+        <h1 class="text-3xl  dark:text-white">Have a Question?</h1>
+        <p class="w-1/2 text-center text-gray-400">Have any question you want to ask me. Drop me a message and we can
+          see whatwe can do together.
+        </p>
+      </div>
+      <!-- bottom  -->
+      <!-- form  -->
+      <form action="mailto:mcdonnell.stuart+portfolio@gmail.com" method="post" enctype="text/plain"
+        class="mt-5 p-8 flex flex-col items-center gap-5">
+        <input
+          class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 dark:ring-0 dark:text-white rounded-sm dark:bg-slate-800"
+          type="text" name="name" id="" placeholder="Name ... ">
+        <input
+          class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 rounded-sm dark:ring-0 dark:text-white dark:bg-slate-800"
+          type="email" name="email" id="" placeholder="Email ... ">
+        <textarea
+          class="p-2 w-full ring-1 md:w-1/2 ring-indigo-300 rounded-sm dark:ring-0 dark:text-white dark:bg-slate-800"
+          name="message" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+        <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 cursor-pointer rounded-md">Submit</button>
+      </form>
+      <!-- form end  -->
+    </div>
+  </div>
+  <!-- footer  -->
+  <div class="w-full bg-gray-800">
+    <div class="flex justify-between container items-center mx-auto py-5">
+      <div class="flex items-center gap-2">
+        <img class="w-8" src="./images/male.png" alt="logo" />
+        <span class="text-lg font-bold text-white">Stuart McDonnell</span>
+      </div>
+      <span class="hidden md:block font-medium text-white">
+        Designed and implement by Stuart McDonnell</span>
+
+      <div class="flex gap-2">
+        <img class="w-4 cursor-pointer" src="./images/linkedin.png" alt="">
+        <img class="w-4 cursor-pointer" src="./images/facebook.png" alt="">
+        <img class="w-4 cursor-pointer" src="./images/instagram.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- contact form end  -->
+  <script src="./app.js "></script>
+  <script src="./helper/autotyping.js "></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
